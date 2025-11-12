@@ -8,6 +8,8 @@ package Model;
  *
  * @author AMD
  */
-public class Comida {
-    
+public class Comida extends Alimento{
+    public Comida(String nome, double preço) {
+        super(nome, preço);
+    }
 }
