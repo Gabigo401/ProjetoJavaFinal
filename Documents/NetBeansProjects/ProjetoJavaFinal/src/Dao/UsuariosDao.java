@@ -31,4 +31,12 @@ public class UsuariosDao {
         statement.executeUpdate();
         statement.close();
     }
+    
+    public ResultSet consultas(Usuarios usuarios) throws SQLException{
+        String sql = "SELECT * FROM usuario WHERE cpf = ? AND senha = ?";
+        PreparedStatement statement = conn.prepareStatement(sql);
+        statement.setString(1, usuarios.getCPF());
+        statement.setString(2, usuarios.getSenha());
+        return statement.executeQuery();
+    }
 }
