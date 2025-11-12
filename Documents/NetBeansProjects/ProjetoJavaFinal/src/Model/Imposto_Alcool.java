@@ -8,6 +8,6 @@ package Model;
  *
  * @author AMD
  */
-public class Imposto_Alcool {
-    
+public interface Imposto_Alcool {
+    double calcularImpostoAlcool();
 }
