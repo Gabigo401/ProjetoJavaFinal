@@ -42,4 +42,13 @@ public class CarrinhoDao {
         statement.close();
         return pedidos;
     }
+    
+    public void excluir(int idPedido, String cpfAtual) throws SQLException{
+       String sql = "DELETE FROM pedidos WHERE id = ? AND cpf_usuario = ? AND status = 'Em andamento'";
+       PreparedStatement statement = conn.prepareStatement(sql);
+       statement.setInt(1, idPedido);
+       statement.setString(2, cpfAtual);
+       statement.executeUpdate();
+       statement.close();
+   }
 }
