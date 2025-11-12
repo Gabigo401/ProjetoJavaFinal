@@ -59,4 +59,26 @@ public class CarrinhoControle {
                                           e.getMessage());
         }
     }
+    
+    public void excluirPedidos(String cpfAtual, int idPedido, Carrinho car){
+        Conexao conexao = new Conexao();
+        try{
+            Connection conn = conexao.getConnection();
+            CarrinhoDao dao = new CarrinhoDao(conn);
+            
+            int id = JOptionPane.showConfirmDialog(car, "Deseja excluir esse pedido" +
+                     idPedido + "?", "Confirmando a exclusão", JOptionPane.YES_NO_OPTION);
+            
+            if(id == JOptionPane.YES_OPTION){
+                dao.excluir(idPedido, cpfAtual);
+                JOptionPane.showMessageDialog(car, "Pedido excluido");
+                
+                dao.Mostrar(cpfAtual, "Em andamento");
+            }
+            conn.close();
+        }catch (SQLException e) {
+            JOptionPane.showMessageDialog(car, "Erro ao excluir pedido:" +
+                                          e.getMessage());
+        }
+    }
 }
