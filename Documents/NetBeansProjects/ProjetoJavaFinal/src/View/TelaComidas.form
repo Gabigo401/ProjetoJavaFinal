@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="jLabel1" min="-2" pref="143" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="116" max="-2" attributes="0"/>
+                      <Component id="lblItens" min="-2" pref="256" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="jScrollPane1" min="-2" pref="433" max="-2" attributes="0"/>
+                          <Group type="102" attributes="0">
+                              <Component id="txtBusca" min="-2" pref="321" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="btBuscar" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+              </Group>
+              <EmptySpace pref="72" max="32767" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="btCarrinho" min="-2" pref="176" max="-2" attributes="0"/>
+                  <Component id="btAdd" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="207" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                      <Component id="lblItens" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="txtBusca" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btBuscar" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="212" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabel1" min="-2" pref="190" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="99" max="-2" attributes="0"/>
+                              <Component id="jScrollPane1" min="-2" pref="182" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="12" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+              <Component id="btAdd" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="btCarrinho" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="73" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="1" name="https://www.marbour.eu/wp-content/uploads/fei-color.png"/>
+        </Property>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblItens">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="18" style="1"/>
+        </Property>
+        <Property name="horizontalAlignment" type="int" value="0"/>
+        <Property name="text" type="java.lang.String" value="Comidas e Bebidas"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btAdd">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="14" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Adicionar ao carrinho"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btAddActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btCarrinho">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Segoe UI" size="14" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Ver Carrinho"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btCarrinhoActionPerformed"/>
+      </Events>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Container class="javax.swing.JPanel" name="jPanel1">
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Group type="102" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="cbPizza" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="cbHamburguer" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="lblPizzaNome" min="-2" pref="49" max="-2" attributes="0"/>
+                                  <Component id="lblPizzaPreço" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                                      <Component id="lblHamburguerPreço" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Component id="lblHamburguerNome" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                          </Group>
+                      </Group>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="lblTacoNome" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblTacoPreço" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="lblFrangoPreço" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblFrangoNome" alignment="1" min="-2" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Component id="cbTaco" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="cbPastel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <EmptySpace min="21" pref="21" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="lblCervejaPreço" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="lblCerveja" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                      </Group>
+                                      <EmptySpace pref="22" max="32767" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="cbFrango" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="cbKibe" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Group type="102" alignment="1" attributes="0">
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Group type="102" attributes="0">
+                                                      <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                                                      <Component id="lblCaipirinhaPreço" min="-2" max="-2" attributes="0"/>
+                                                  </Group>
+                                                  <Component id="lblCaipirinha" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
+                                  </Group>
+                                  <Group type="102" attributes="0">
+                                      <Component id="cbCerveja" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
+                                      <Component id="cbCaipirinha" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                  </Group>
+                              </Group>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lblBatataNome" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                              <Component id="lblBatatapreço" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lblCoxinhaPreço" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblCoxinhaNome" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="lblPastelPreço" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblPastelNome" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="lblKibeNome" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="lblKibePreço" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Group type="102" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Component id="cbBatata" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="1" attributes="0">
+                                          <Component id="lblSucoPreço" min="-2" max="-2" attributes="0"/>
+                                          <Component id="lblSuco" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
+                                      <Component id="cbCoxinha" min="-2" max="-2" attributes="0"/>
+                                  </Group>
+                                  <Group type="102" alignment="0" attributes="0">
+                                      <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                                              <Component id="lblCocaPreço" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="lblCoca" min="-2" max="-2" attributes="0"/>
+                                      </Group>
+                                  </Group>
+                              </Group>
+                          </Group>
+                          <Group type="102" attributes="0">
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="cbSuco" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace max="32767" attributes="0"/>
+                              <Component id="cbCoca" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblPizzaNome" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                          <Component id="lblHamburguerNome" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblTacoNome" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblFrangoNome" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblPizzaPreço" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblHamburguerPreço" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblTacoPreço" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblFrangoPreço" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="cbPizza" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cbHamburguer" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cbTaco" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cbFrango" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblBatataNome" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblCoxinhaNome" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblPastelNome" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblKibeNome" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblBatatapreço" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblCoxinhaPreço" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblPastelPreço" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblKibePreço" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="cbBatata" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cbCoxinha" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cbPastel" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cbKibe" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblSuco" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblCoca" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblCerveja" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblCaipirinha" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lblSucoPreço" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblCocaPreço" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblCervejaPreço" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblCaipirinhaPreço" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="cbSuco" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cbCoca" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cbCerveja" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="cbCaipirinha" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="19" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="lblPizzaNome">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Segoe UI" size="12" style="1"/>
+                </Property>
+                <Property name="horizontalAlignment" type="int" value="0"/>
+                <Property name="text" type="java.lang.String" value=" Pizza"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="cbPizza">
+              <Properties>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Segoe UI" size="12" style="1"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Adicionar"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="cbPizzaActionPerformed"/>
+              </Events>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblPizzaPre&#xe7;o">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="R$ 45.00"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblHamburguerNome">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Hamburguer"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblHamburguerPre&#xe7;o">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="R$ 30.00"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="cbHamburguer">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Adicionar"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblTacoNome">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Taco"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblTacoPre&#xe7;o">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="R$ 25.00"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="cbTaco">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Adicionar"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblFrangoNome">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Frango"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblFrangoPre&#xe7;o">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="R$ 25.00"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="cbFrango">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Adicionar"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblBatataNome">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Batata Fritas"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblBatatapre&#xe7;o">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="R$ 10.00"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="cbBatata">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Adicionar"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblCoxinhaNome">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Coxinha"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblCoxinhaPre&#xe7;o">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="R$ 8.00"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="cbCoxinha">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Adicionar"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblPastelNome">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Pastel"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblPastelPre&#xe7;o">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="R$ 12.00"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="cbPastel">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Adicionar"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblKibeNome">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Kibe"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblKibePre&#xe7;o">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="R$ 8.00"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="cbKibe">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Adicionar"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblSuco">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Suco"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblSucoPre&#xe7;o">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="R$ 8.00"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblCoca">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Coca-Cola"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblCocaPre&#xe7;o">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="R$ 9.00"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblCerveja">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Cerveja"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblCervejaPre&#xe7;o">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="R$ 12.00"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblCaipirinha">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Caipirinha"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JLabel" name="lblCaipirinhaPre&#xe7;o">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="R$ 14.00"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="cbSuco">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Adicionar"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="cbCoca">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Adicionar"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="cbCerveja">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Adicionar"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JCheckBox" name="cbCaipirinha">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Adicionar"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JTextField" name="txtBusca">
+    </Component>
+    <Component class="javax.swing.JButton" name="btBuscar">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Buscar"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btBuscarActionPerformed"/>
+      </Events>
+    </Component>
+  </SubComponents>
+</Form>
