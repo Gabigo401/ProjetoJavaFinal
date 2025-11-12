@@ -45,4 +45,36 @@ public class FinalizarControler {
             "Erro ao finalizar pedido: " + e.getMessage());
         }
     }
+    
+    public void MostrarPedidosFinal(String cpfAtual, FinalizarPedidos fim){
+        Conexao conexao = new Conexao();
+        try{
+            Connection conn = conexao.getConnection();
+            CarrinhoDao dao = new CarrinhoDao(conn);
+            NotaDao nt = new NotaDao(conn);
+            
+            ArrayList<Pedido> pedidos = nt.MostrarFinais(cpfAtual, "Finalizado");
+            
+            StringBuilder text = new StringBuilder();
+            for(Pedido p : pedidos){
+                text.append("Pedido NR:  ")
+                     .append(p.getId())
+                     .append(" | ")
+                     .append(p.getNome())
+                     .append(" - R$ ")
+                     .append(String.format("%.2f", p.getTotal()))
+                     .append(" | Status: ")
+                     .append(p.getStatus())
+                     .append(" | Nota: ")
+                     .append(p.getNota())
+                     .append ("\n");
+            }
+            
+            fim.getTxtFinalizados().setText(text.toString());
+            
+        }catch (SQLException e){
+            JOptionPane.showMessageDialog(null, 
+            "Erro ao mostrar pedidos finalizados" + e.getMessage());
+        }
+    }
 }
