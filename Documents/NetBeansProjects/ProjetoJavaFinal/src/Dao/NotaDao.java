@@ -30,4 +30,25 @@ public class NotaDao {
         statement.executeUpdate();
         statement.close();
     }
+    
+    public ArrayList<Pedido> MostrarFinais(String cpfAtual, String status) throws SQLException{
+        ArrayList<Pedido> pedidos = new ArrayList<>();
+        
+        String sql = "SELECT * FROM pedidos WHERE cpf_usuario = ? AND status ="
+                + " 'Finalizado'";
+        PreparedStatement statement = conn.prepareStatement(sql);
+        statement.setString(1, cpfAtual);
+        ResultSet rs = statement.executeQuery();
+        
+        while(rs.next()){
+            Pedido pd = new Pedido(rs.getString("cpf_usuario"),
+                                   rs.getDouble("total"), rs.getInt("avaliacao"),
+                                   rs.getString("status"), rs.getString("nome"));
+            pd.setId(rs.getInt("id"));
+            pedidos.add(pd);
+        }
+        rs.close();
+        statement.close();
+        return pedidos;
+    }
 }
