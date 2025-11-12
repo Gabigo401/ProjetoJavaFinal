@@ -4,6 +4,8 @@
  */
 package projetojavafinal;
 
+import View.Cadastrar;
+
 /**
  *
  * @author AMD
@@ -14,6 +16,8 @@ public class Principal {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Cadastrar c = new Cadastrar();
+        
+        c.setVisible(true);
     }
 }
