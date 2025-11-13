@@ -1,9 +1,13 @@
+
+
 Este relatório descreve o desenvolvimento de um sistema de pedidos de comidas e bebidas, utilizando JFrame como interface gráfica e PostgreSQL(Pgadmin)
 como banco de dados. O objetivo principal do projeto é permitir que o usuário faça o cadastro, login, visualizar as opções de comidas e bebidas e adicione
 os produtos em um carrinho de pedidos e finalize os pedidos com nota de avaliação, e visualizar seus pedidos finalizados.
 O projeto foi feito seguindo o padrão MVC (Model–View–Controller), para garantir uma melhor organização, manutenção e separação entre a lógica, interface e dados.
 O sistema foi dividido em três camadas principais:
- 1 - Model (Modelo) Contém as classes responsáveis por representar os dados e regras do projeto
+
+ Model (Modelo) Contém as classes responsáveis por representar os dados e regras do projeto
+ 
 Usuários – representa os usuários cadastrados.
 Alimento – classe abstrata para comidas e bebidas.
 Comida e Bebida – especializações de Alimento e as bebidas aplicam taxa de 10% se forem alcoólicas.
